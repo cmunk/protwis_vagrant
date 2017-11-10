@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
     # Allocate resources
     config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--ioapic", "on"]
-        vb.customize ["modifyvm", :id, "--memory", "1024"]
-        vb.customize ["modifyvm", :id, "--cpus", "2"]
+        vb.customize ["modifyvm", :id, "--memory", "2058"]
+        vb.customize ["modifyvm", :id, "--cpus", "1"]
     end
 
     # Set up a shared directory
